@@ -54,14 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практична робота №2 — Варіант 9</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
     <h1>Нова тема форуму</h1>
-    <p class="subtitle">Практична робота №2 — варіант 9 «Форум/дошка обговорень»</p>
-
     <?php if ($success): ?>
         <section class="success">
             <h2>Тему успішно створено</h2>
@@ -122,7 +119,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     maxlength="2000"
                     placeholder="Введіть повідомлення (мінімум 10 символів)"
                 ><?= h($message) ?></textarea>
-                <div class="hint">Чернетка цього поля автоматично зберігається у localStorage.</div>
                 <?php if (isset($errors['message'])): ?>
                     <div class="error"><?= h($errors['message']) ?></div>
                 <?php endif; ?>

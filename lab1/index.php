@@ -36,7 +36,7 @@ $topics = [
     [
         'title' => 'Як правильно організувати структуру PHP-проєкту?',
         'author' => 'Дмитро',
-        'repliesCount' => 8,
+        'repliesCount' => 0,
         'createdAt' => '2026-09-14'
     ]
 ];
