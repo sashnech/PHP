@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    margin-top: 0;
+    color: #64748b;
+}
+
+.card {
+    max-width: 1100px;
+    margin: 22px auto 0;
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+body > .card {
+    max-width: 650px;
+    margin-top: 0;
+    padding: 24px;
+}
+
+.top-actions {
+    margin-top: 20px;
+}
+
+a.button,
+button {
+    display: inline-block;
+    border: 0;
+    border-radius: 9px;
+    padding: 10px 14px;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a.link {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+button.delete {
+    background: #dc2626;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 11px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+th {
+    background: #f8fafc;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.filter {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    font: inherit;
+}
+
+.filter input[type="text"] {
+    min-width: 260px;
+    width: auto;
+}
+
+.check {
+    margin: 16px 0;
+}
+
+.row {
+    margin: 12px 0;
+}
+
+.label {
+    font-weight: 700;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 16px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .filter {
+        flex-direction: column;
+    }
+
+    .filter input[type="text"] {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
