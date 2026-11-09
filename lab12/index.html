@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Трекер прочитаних книг</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Трекер прочитаних книг</h1>
+
+    <section>
+      <h2>Додати книгу</h2>
+      <form id="add-book-form">
+        <label for="book-title">Назва книги</label>
+        <input id="book-title" type="text" required>
+
+        <label for="total-pages">Кількість сторінок</label>
+        <input id="total-pages" type="number" min="1" step="1" required>
+
+        <button type="submit">Додати</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Мої книги</h2>
+      <div id="book-list"></div>
+    </section>
+  </main>
+</body>
+</html>
