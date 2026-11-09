@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f5;
+  color: #222;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+h1 + p {
+  margin-top: 0;
+  color: #666;
+}
+
+section {
+  margin-top: 28px;
+}
+
+#add-book-form,
+.book {
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#add-book-form {
+  display: grid;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font: inherit;
+}
+
+button {
+  padding: 9px 16px;
+  background: #2f7d32;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #256529;
+}
+
+.book {
+  margin-bottom: 14px;
+}
+
+.book h3 {
+  margin: 0 0 8px;
+}
+
+.pages {
+  margin: 0 0 12px;
+}
+
+.progress {
+  height: 16px;
+  overflow: hidden;
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: #2f7d32;
+  transition: width 0.4s ease;
+}
+
+.progress-form {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.progress-form label {
+  flex: 1;
+}
+
+.progress-form input {
+  display: block;
+  margin-top: 4px;
+}
+
+@media (max-width: 480px) {
+  .progress-form {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
